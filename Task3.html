@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Task 3</title>
+    <style>
+        /* Styles for different background colors */
+        
+        .green-background {
+            background-color: rgb(233, 128, 15);
+        }
+        
+        .blue-background {
+            background-color: rgb(197, 14, 97);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Welcome to my webpage</h1>
+    <button id="myButton">Change background color</button>
+</body>
+<script>
+    document.getElementById("myButton").onclick = function() {
+        alert("Background color will change");
+        var currentClass = document.body.className;
+        if (currentClass === "green-background") {
+            document.body.className = "blue-background";
+        } else {
+            document.body.className = "green-background";
+        }
+        alert("Background will be changed");
+    };
+</script>
+
+</html>

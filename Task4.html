@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Task 4</title>
+    <style>
+        /* Style for main section */
+        
+        #main-section {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Style for alternate content */
+        
+        .alternate-content {
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my webpage</h1>
+    <div id="main-section">
+        <p>This is the content of main section.</p>
+    </div>
+    <button id="change-content-button">Change Content</button>
+    <script>
+        var mainSection = document.getElementById("main-section");
+        var changeContentButton = document.getElementById("change-content-button");
+
+        changeContentButton.onclick = function() {
+            mainSection.innerHTML = "<p>Alter </p>";
+            mainSection.className = "alternate-content";
+        };
+    </script>
+</body>
+
+</html>

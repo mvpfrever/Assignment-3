@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Task 2</title>
+</head>
+
+<body>
+    <h1 id="heading">Welcome to my webpage</h1>
+    <button id="myButton">Click me</button>
+    <button id="myButton2">Click me</button>
+    <script>
+        document.getElementById("myButton").onclick = function() {
+            document.body.style.backgroundColor = "khaki";
+            document.getElementById("heading").style.color = "quartz";
+            document.getElementById("heading").style.fontSize = "48pt";
+            document.getElementById("heading").innerHTML = "Welcome to Quazi's webpage";
+        };
+        document.getElementById("myButton2").onclick = function() {
+            document.body.style.backgroundColor = "ivory";
+            document.getElementById("heading").style.color = "aqua";
+            document.getElementById("heading").style.fontSize = "20pt";
+            document.getElementById("heading").innerHTML = "Welcome to Aquarius's webpage ";
+        };
+    </script>
+</body>
+
+</html>
